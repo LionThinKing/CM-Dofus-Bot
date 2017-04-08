@@ -1,0 +1,33 @@
+# Project: CM Dofus Job
+# Makefile created by Dev-C++ 5.2.0.3
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+RES      = CM_Dofus_Job_private.res
+OBJ      = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -mwindows  -g3 
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" 
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" 
+BIN      = "CM Dofus Job.exe"
+CXXFLAGS = $(CXXINCS)   -g3
+CFLAGS   = $(INCS)   -g3
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before "CM Dofus Job.exe" all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "CM Dofus Job.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+CM_Dofus_Job_private.res: CM_Dofus_Job_private.rc 
+	$(WINDRES) -i CM_Dofus_Job_private.rc --input-format=rc -o CM_Dofus_Job_private.res -O coff 

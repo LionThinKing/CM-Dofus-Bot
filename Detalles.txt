@@ -1,0 +1,31 @@
+Datos Dofus
+
+	Tamaño de Ventana:  							X=1080 Y=889
+	Tamaño de Cliente:								X=1064 Y=851
+	-Click Nivel									[OK]
+		Posicion In Windows							X=505  Y=510
+		Posicion In Client							X=500 Y=480
+		Color Boton									R:FF G:61 B:00
+	-Detectar Batalla 								[OK] 
+		Posicion in Windows							X=510 Y=852
+		Posicion in Client							X=507 Y=827
+		Color Boton									R:FF G:61 B:00
+	-Detectar Enemigos
+		Color Enemigos								R:18 G:DC B:FF		
+		Color Aliados								R:FF G:17 B:17
+		Posicion in Windows Participante 1		 	X=1016 Y=720
+		Posicion in Client Participante  1			X=1008  Y=690
+		Posicion in Windows Participante 2			X=962 Y=720
+		Posicion in Client Pariticpante  2			X=954 Y=690
+		Distancia entre Participantes 				54
+	-Detectar Turno
+		Posicion in Windows Participante 1			X=997 Y=748
+		Posicion in Windows Participante 2			X=944 Y=748
+		Distancia Entre Vida y Señal				18
+	-Lanzar Ataque
+		Posicion in Client Participante 1			X=988  Y=690
+		Distancia 									28
+	-Fin De Batalla
+		Posicion in Window							X=486  Y=647
+		Posicion in Client							X=469  Y=617
+

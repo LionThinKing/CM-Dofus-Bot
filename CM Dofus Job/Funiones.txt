@@ -1,0 +1,3 @@
+*Encuentra la ventana de Dofus 					[X]
+*Obtiene la resolucion de la ventana				[X]
+*Obtiene las posiciones a guardar donde se realizara el oficio 	[X]
